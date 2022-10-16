@@ -17,13 +17,13 @@
   </head>
   <body>
     <header>
-      <div class="container menu-container">
+      <div class="menu-container">
         <a class="link" href="./index.html"
           ><span class="logo-blue">Web</span
           ><span class="logo-black">Studio</span></a
         >
-        <nav class="menu-self">
-          <ul class="list">
+        <nav>
+          <ul class="list nav">
             <li>
               <a class="link menu active-page" href="./index.html">Agencja</a>
             </li>
@@ -46,35 +46,37 @@
       </div>
     </header>
     <main>
-      <div class="container main-background">
-        <h1 class="main-text">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
-        <button class="button" type="button">Zamów usługe</button>
-      </div>
-      <section>
-        <div class="container">
+      <section class="section">
+        <div class="container index-main-background">
+          <h1 class="main-text">EFEKTYWNE ROZWIĄZANIA DLA WASZEGO BIZNESU</h1>
+          <button class="button" type="button">Zamów usługe</button>
+        </div>
+      </section>
+      <section class="section">
+        <div class="container lorem">
           <ul class="list">
-            <li>
+            <li class="index-lorem-wrapper">
               <h4 class="lorem-header">LOREM IPSUM</h4>
               <p class="lorem-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
                 arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
             </li>
-            <li>
+            <li class="index-lorem-wrapper">
               <h4 class="lorem-header">LOREM IPSUM</h4>
               <p class="lorem-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
                 arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
             </li>
-            <li>
+            <li class="index-lorem-wrapper">
               <h4 class="lorem-header">LOREM IPSUM</h4>
               <p class="lorem-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
                 arcu sem. Sed non sodales dui. Interdum et malesuada
               </p>
             </li>
-            <li>
+            <li class="index-lorem-wrapper">
               <h4 class="lorem-header">LOREM IPSUM</h4>
               <p class="lorem-text">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vel
@@ -83,8 +85,6 @@
             </li>
           </ul>
         </div>
-      </section>
-      <section>
         <div class="container column">
           <h2 class="main-header">Czym się zajmujemy</h2>
           <ul class="main-pictures list">
@@ -109,64 +109,72 @@
           </ul>
         </div>
       </section>
-      <section>
-        <div class="container column team-container">
+      <section class="section">
+        <div class="container index-team-container">
           <h2 class="main-header">Nasz zespół</h2>
           <ul class="team-background main-pictures list">
-            <li class="team">
-              <figure>
-                <img src=images/index-team-productdesigner.jpg width="270"
-                height="260" alt="Product Designer">
-                <figcaption>
-                  <ul>
-                    <li class="caption list-item">John Doe</li>
-                    <li class="caption-gray list-item">Product Designer</li>
-                  </ul>
-                </figcaption>
-              </figure>
+            <li>
+              <div class="team-member">
+                <figure>
+                  <img src=images/index-team-productdesigner.jpg width="270"
+                  height="260" alt="Product Designer">
+                  <figcaption>
+                    <ul class="list column">
+                      <li class="caption">John Doe</li>
+                      <li class="caption-gray">Product Designer</li>
+                    </ul>
+                  </figcaption>
+                </figure>
+              </div>
             </li>
-            <li class="team">
-              <figure>
-                <img src=images/index-team-frontend.jpg width="270" height="260"
-                alt="Frontend developer">
-                <figcaption>
-                  <ul>
-                    <li class="caption list-item">John Doe</li>
-                    <li class="caption-gray list-item">Frontend developer</li>
-                  </ul>
-                </figcaption>
-              </figure>
+            <li>
+              <div class="team-member">
+                <figure>
+                  <img src=images/index-team-frontend.jpg width="270"
+                  height="260" alt="Frontend developer">
+                  <figcaption>
+                    <ul class="list column">
+                      <li class="caption">John Doe</li>
+                      <li class="caption-gray">Frontend developer</li>
+                    </ul>
+                  </figcaption>
+                </figure>
+              </div>
             </li>
-            <li class="team">
-              <figure>
-                <img src=images/index-team-marketing.jpg width="270"
-                height="260" alt="Marketing">
-                <figcaption>
-                  <ul>
-                    <li class="caption list-item">John Doe</li>
-                    <li class="caption-gray list-item">Marketing</li>
-                  </ul>
-                </figcaption>
-              </figure>
+            <li>
+              <div class="team-member">
+                <figure>
+                  <img src=images/index-team-marketing.jpg width="270"
+                  height="260" alt="Marketing">
+                  <figcaption>
+                    <ul class="list column">
+                      <li class="caption">John Doe</li>
+                      <li class="caption-gray">Marketing</li>
+                    </ul>
+                  </figcaption>
+                </figure>
+              </div>
             </li>
-            <li class="team">
-              <figure>
-                <img src=images/index-team-uidesigner.jpg width="270"
-                height="260" alt="UI Designer">
-                <figcaption>
-                  <ul>
-                    <li class="caption list-item">John Doe</li>
-                    <li class="caption-gray list-item">UI Designer</li>
-                  </ul>
-                </figcaption>
-              </figure>
+            <li>
+              <div class="team-member">
+                <figure>
+                  <img src=images/index-team-uidesigner.jpg width="270"
+                  height="260" alt="UI Designer">
+                  <figcaption>
+                    <ul class="list column">
+                      <li class="caption">John Doe</li>
+                      <li class="caption-gray">UI Designer</li>
+                    </ul>
+                  </figcaption>
+                </figure>
+              </div>
             </li>
           </ul>
         </div>
       </section>
     </main>
-    <footer class="footer">
-      <div class="container footer-container">
+    <footer class="container footer">
+      <div class="footer-container">
         <ul class="list footer-container">
           <li>
             <a class="link" href="./index.html"

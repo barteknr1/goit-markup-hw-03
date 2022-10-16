@@ -11,10 +11,15 @@
 *::after {
   box-sizing: border-box;
 }
-ul {
-  padding: 0;
-}
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+ul,
 figure {
+  padding: 0;
   margin: 0;
 }
 body {
@@ -22,13 +27,9 @@ body {
   color: var(--dgray);
   font-family: "roboto", sans-serif;
   font-style: normal;
-}
-.menu-container {
-  display: flex;
   max-width: 1200px;
-  max-height: 80px;
-  justify-content: space-between;
-  margin: 0 15px;
+  margin: 0 auto;
+  padding: 0;
 }
 .logo-blue {
   font-family: "raleway", sans-serif;
@@ -54,12 +55,35 @@ body {
   line-height: 1.17em;
   letter-spacing: 0.03em;
 }
+.container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 94px 15px;
+  align-items: center;
+}
+.menu-container {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  min-height: 80px;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 1px solid #ececec;
+}
+.lorem {
+  padding-bottom: 0;
+}
 .menu {
   color: inherit;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.17em;
   letter-spacing: 0.02em;
+}
+.nav {
+  display: flex;
+  gap: 46px;
 }
 .link {
   text-decoration: none;
@@ -70,6 +94,7 @@ body {
   font-size: 14px;
   line-height: 1.17em;
   letter-spacing: 0.02em;
+  margin-left: 50px;
 }
 .link-contact-footer {
   text-decoration: none;
@@ -90,19 +115,17 @@ body {
 .link:focus {
   color: var(--blue);
 }
+.active-page {
+  color: var(--blue);
+}
 .list {
   display: flex;
   list-style: none;
   font-style: normal;
 }
-.list-item {
-  list-style: none;
-}
-.main-background {
+.index-main-background {
   display: flex;
   background-color: var(--gray);
-  max-width: 1200px;
-  min-height: 600px;
   justify-content: center;
   flex-direction: column;
 }
@@ -112,6 +135,8 @@ body {
   font-size: 36px;
   line-height: 1.17em;
   letter-spacing: 0.03em;
+  justify-content: center;
+  margin-bottom: 50px;
 }
 .main-text {
   color: var(--white);
@@ -122,6 +147,7 @@ body {
   line-height: 1.36em;
   letter-spacing: 0.06em;
   text-align: center;
+  margin-bottom: 30px;
 }
 .button {
   color: var(--white);
@@ -140,31 +166,29 @@ body {
 }
 .footer {
   background-color: var(--gray);
-  max-width: 1200px;
-  max-height: 252px;
-  margin: 0 auto;
+  width: 1200px;
+  padding: 60px 15px;
 }
 .footer .footer-container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
-.footer > .footer-container {
-  padding: 60px 15px;
-}
-.active-page {
-  color: var(--blue);
+.index-lorem-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 270px;
+  margin: 0 15px;
 }
 .lorem-header {
   color: inherit;
   font-size: 14px;
   line-height: 1.14em;
   letter-spacing: 0.03em;
+  margin-bottom: 10px;
 }
 .lorem-text {
   color: var(--lgray);
-  max-width: 270px;
-  max-height: 75px;
   font-size: 14px;
   line-height: 1.71em;
   letter-spacing: 0.03em;
@@ -215,52 +239,50 @@ body {
   line-height: 1.87em;
   letter-spacing: 0.03em;
 }
-.container {
-  display: flex;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 15px;
-  align-items: center;
-}
 .main-pictures {
   display: flex;
+  gap: 30px;
   justify-content: space-around;
 }
 .column {
   flex-direction: column;
 }
-.team {
+.team-member {
   max-width: 270px;
-  max-height: 368px;
-  background-color: var(--white);
+  background-color: #fff;
+  border: solid 0px #fff;
+  border-radius: 0px 0px 4px 4px;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
-.team-container {
+.index-team-container {
   background-color: var(--gray-background);
   max-height: 648px;
+  flex-direction: column;
 }
 .buttons-portfolio {
   display: flex;
   flex-direction: column;
+  margin-bottom: 50px;
 }
 .container-portfolio {
-  max-width: 1200px;
+  width: 100%;
   display: flex;
   align-items: center;
   margin: 0 auto;
   flex-direction: column;
   flex-wrap: wrap;
 }
-.projects {
-  display: flex;
-  flex-wrap: wrap;
-}
 .portfolio-box {
   display: flex;
+  box-sizing: content-box;
   min-width: 370px;
   min-height: 404px;
   border: 1px solid #eee;
 }
-.menu-self {
+.projects {
   display: flex;
-  align-self: flex-start;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 0;
 }
