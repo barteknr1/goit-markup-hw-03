@@ -59,14 +59,16 @@ body {
 .container {
   display: flex;
   max-width: 1200px;
-  margin: 0 auto;
-  padding: 94px 15px;
+  padding: 94px 0;
   align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 .menu-container {
   display: flex;
   max-width: 1200px;
-  margin: 0 15px;
+  padding: 0 15px;
+  padding-right: 27px;
   align-items: center;
   justify-content: space-between;
   border-bottom: 1px solid #ececec;
@@ -126,6 +128,7 @@ body {
   display: flex;
   background-color: var(--gray);
   flex-direction: column;
+  padding: 200px 0;
 }
 .main-header {
   display: flex;
@@ -133,13 +136,11 @@ body {
   font-size: 36px;
   line-height: 1.17em;
   letter-spacing: 0.03em;
-  justify-content: center;
   margin-bottom: 50px;
 }
 .index-main-text {
   color: var(--white);
   max-width: 696px;
-  max-height: 120px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36em;
@@ -162,7 +163,6 @@ body {
 }
 .index-lorem-container {
   padding-bottom: 0;
-  justify-content: center;
 }
 .index-lorem-wrapper {
   display: flex;
@@ -184,22 +184,18 @@ body {
   letter-spacing: 0.03em;
 }
 .main-pictures {
-  display: flex;
   gap: 30px;
-  justify-content: space-around;
 }
 .column {
   flex-direction: column;
 }
 .index-team-container {
   background-color: var(--gray-background);
-  max-height: 648px;
   flex-direction: column;
 }
 .index-team-member-card {
   max-width: 270px;
   background-color: #fff;
-  border: solid 0px #fff;
   border-radius: 0px 0px 4px 4px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -233,6 +229,7 @@ body {
 .footer .footer-container {
   display: flex;
   flex-direction: column;
+  font-style: normal;
 }
 .portfolio-container {
   width: 100%;
@@ -286,10 +283,14 @@ body {
 }
 .portfolio-box {
   border: 1px solid #eee;
+  flex-basis: calc((100% - 60px) / 3);
 }
 .portfolio-projects {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 30px;
   justify-content: center;
+}
+.portfolio-project {
+  width: 100%;
 }
