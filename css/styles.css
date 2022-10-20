@@ -159,6 +159,7 @@ body {
 .button {
   color: var(--white);
   background-color: var(--blue);
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87em;
